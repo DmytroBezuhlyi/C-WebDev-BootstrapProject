@@ -131,23 +131,20 @@ nav {
   color: #ffffff;
 }
 
-.advantages {
-  min-height: 900px;
-  padding: 71px 0 65px 0;
-}
-.advantages .advantages_btn {
+.label {
+  margin: 0 auto;
   width: 112px;
   height: 24px;
   background-color: #000000;
-  padding: 12px 6px 11px 6px;
+  padding: 5px 12px;
   font-size: 11px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  line-height: 0;
 }
-.advantages .advantages_header {
+
+.title {
   font-size: 38px;
   font-weight: bold;
   text-align: center;
@@ -155,11 +152,24 @@ nav {
   text-transform: uppercase;
   margin-top: 38px;
 }
-.advantages .advantages_item {
+
+.subtitle {
+  margin-top: 19px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #222222;
+  text-align: center;
+}
+
+.advantages {
+  min-height: 900px;
+  padding: 71px 0 65px 0;
+}
+.advantages_item {
   display: flex;
   margin-top: 40px;
 }
-.advantages .advantages_item .item_round {
+.advantages_item .item_round {
   margin-top: 10px;
   width: 131px;
   height: 131px;
@@ -170,22 +180,79 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.advantages .advantages_item .item_text {
+.advantages_item .item_text {
   max-width: 341px;
 }
-.advantages .advantages_item .item_text .item_header {
+.advantages_item .item_text .item_header {
   color: #1eacc7;
   font-size: 17px;
   line-height: 21px;
   text-align: justify;
   font-weight: 400;
 }
-.advantages .advantages_item .item_text .item_description {
+.advantages_item .item_text .item_description {
   color: #202020;
   font-size: 15px;
   line-height: 21px;
   text-align: justify;
   font-weight: 300;
+}
+
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/mobile_bg.png");
+}
+.mobile .row {
+  margin-top: 32px;
+}
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto 19px;
+  padding-top: 92px;
+}
+.mobile_item_1 {
+  background: url("../img/mobile/1.png") center center/cover no-repeat;
+}
+.mobile_item_2 {
+  background: url("../img/mobile/2.png") center center/cover no-repeat;
+}
+.mobile_item_3 {
+  background: url("../img/mobile/3.png") center center/cover no-repeat;
+}
+.mobile_item_4 {
+  background: url("../img/mobile/4.png") center center/cover no-repeat;
+}
+.mobile_item_5 {
+  background: url("../img/mobile/5.png") center center/cover no-repeat;
+}
+.mobile_item_6 {
+  background: url("../img/mobile/6.png") center center/cover no-repeat;
+}
+.mobile_item_subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
