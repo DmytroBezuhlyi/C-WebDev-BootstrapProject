@@ -1,6 +1,10 @@
 $light_blue: #1eacc7
 $pale_red: #ff5656
 
+=btn_hover
+  &:hover
+    background-image: none
+    background-color: $light_blue
 *
   font-family: 'Roboto', sans-serif
 
@@ -26,43 +30,46 @@ nav
   padding: 13px 71px
   margin: 0
   list-style-type: none
-  .menu_link
+  &_link
     font-size: 15px
     font-weight: 300
     color: #ffffff
-  .menu_item
+  &_item
     border-right: 2px dotted black
     padding-right: 28px
+    &:last-of-type
+      padding: 0
+      border-right: none
 .subheader
   margin-top: 50px
   position: absolute
   width: 100%
   height: 84px
   background-color: rgba(0, 0, 0, 0.6)
-  .subheader_logo
+  &_logo
     display: block
     max-width: 100%
     margin-top: 16px
-  .subheader_official
+  &_official
     margin-top: 6px
     font-size: 13px
     font-weight: 100
     opacity: 0.5
     color: #ffffff
-  .subheader_call
+  &_call
     margin-top: 19px
     font-size: 12px
     font-weight: 300
     text-align: right
     color: #ffffff
-  .subheader_phone
+  &_phone
     display: block
     margin-top: 8px
     font-size: 22px
     text-align: right
     color: #ffffff
     line-height: 12px
-  .subheader_btn
+  &_btn
     margin-top: 19px
     width: 172px
     height: 46px
@@ -76,20 +83,21 @@ nav
     text-align: center
     color: #ffffff
     text-transform: uppercase
+    +btn_hover
 
 .promo
   min-height: 800px
   background: url("../img/main_bg.jpg") center (center / cover) no-repeat
-  padding: 150px 0 135px 0
-  .promo_header
-    margin: 0
+  padding: 135px 0
+  &_header
+    margin: 135px 0 0 0
     color: #ffffff
     text-transform: uppercase
     font-size: 60px
     font-weight: 900
     line-height: 60px
     text-align: center
-  .promo_subheader
+  &_subheader
     color: #ffffff
     text-transform: uppercase
     font-size: 36px
@@ -97,14 +105,14 @@ nav
     line-height: 36px
     margin: 22px 0 0 0
     text-align: center
-  .promo_description
+  &_description
     font-size: 18px
     font-weight: 400
     line-height: 24px
     text-align: center
     color: #ffffff
     margin-top: 23px
-  .promo_btn
+  &_btn
     display: block
     margin: 118px auto 0
     width: 259px
@@ -117,6 +125,7 @@ nav
     font-size: 18px
     font-weight: normal
     color: #ffffff
+    +btn_hover
 
 .label
   margin: 0 auto
@@ -148,6 +157,10 @@ nav
 .advantages
   min-height: 900px
   padding: 71px 0 65px 0
+  &_wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
   &_item
     display: flex
     justify-content: center
@@ -222,6 +235,26 @@ nav
       margin: 0 auto
       border-radius: 100%
       cursor: pointer
+      &:before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $light_blue
+        transition: 0.3s all
+      &:after
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        display: block
+        width: 2px
+        height: 14px
+        background-color: $light_blue
+        transition: 0.3s all
+      &:hover
+        &:before, &:after
+          background-color: $pale_red
 
 .choice
   min-height: 896px
