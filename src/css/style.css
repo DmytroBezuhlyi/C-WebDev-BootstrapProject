@@ -147,34 +147,64 @@ nav {
   background-color: #1eacc7;
 }
 
-.label {
+.label_black {
   margin: 0 auto;
   width: 112px;
   height: 24px;
-  background-color: #000000;
   padding: 5px 12px;
   font-size: 11px;
   font-weight: 300;
   text-align: center;
-  color: #ffffff;
   text-transform: uppercase;
+  background-color: #000000;
+  color: #ffffff;
 }
 
-.title {
+.label_white {
+  margin: 0 auto;
+  width: 112px;
+  height: 24px;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #070716;
+}
+
+.title_black {
   font-size: 38px;
   font-weight: bold;
   text-align: center;
-  color: #222222;
   text-transform: uppercase;
-  margin-top: 38px;
+  margin-top: 32px;
+  color: #222222;
 }
 
-.subtitle {
+.title_white {
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 32px;
+  color: #ffffff;
+}
+
+.subtitle_black {
   margin-top: 19px;
   font-size: 17px;
   font-weight: 400;
-  color: #222222;
   text-align: center;
+  color: #222222;
+}
+
+.subtitle_white {
+  margin-top: 19px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
 }
 
 .advantages {
@@ -304,23 +334,6 @@ nav {
   padding: 57px 0 138px 0;
   background: url("../img/choice_bg.png") center center/cover no-repeat;
 }
-.choice .label {
-  background-color: #ffffff;
-  font-size: 11px;
-  font-weight: 100;
-  text-align: center;
-  color: #070716;
-}
-.choice .title {
-  padding-top: 32px;
-  color: #ffffff;
-}
-.choice .subtitle {
-  font-size: 17px;
-  font-weight: 400;
-  text-align: center;
-  color: #ffffff;
-}
 .choice .car_img {
   display: block;
   padding-top: 56px;
@@ -383,6 +396,36 @@ nav {
 }
 .require .warning .require_list li:before {
   background: url("../icons/check_red.png") center center/cover no-repeat;
+}
+
+.cities {
+  position: relative;
+  height: 717px;
+  background: url("../img/cities_bg.jpg");
+}
+.cities_wrapper {
+  height: 717px;
+  padding: 49px 0;
+  position: relative;
+}
+.cities_view {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 49px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cities_view a {
+  font-size: 15px;
+  text-align: center;
+  line-height: 68px;
+  color: #1fbad6;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.cities_view a:hover {
+  color: #1eacc7;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
