@@ -499,4 +499,13 @@ footer a:hover {
   text-align: center;
 }
 
+@media (max-width: 1200px) {
+  .menu_item {
+    padding-right: 20px;
+  }
+  .menu_link {
+    font-size: 13px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
