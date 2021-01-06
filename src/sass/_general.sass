@@ -11,6 +11,9 @@ nav
   width: 100%
   z-index: 1
 
+.hamburger
+  display: none
+
 .menu
   display: flex
   justify-content: space-between
@@ -166,34 +169,34 @@ nav
 
 .advantages
   padding: 71px 0 65px 0
-  & .advantages_block
+  &_block
     display: flex
     justify-content: center
     align-items: center
     margin-top: 35px
-    .advantages_round
-      width: 131px
-      height: 131px
-      border-radius: 100%
-      background-color: $light_blue
-      margin-right: 26px
-      display: flex
-      justify-content: center
-      align-items: center
-    .advantages_text
-      width: 343px
-      .advantages_header
-        color: $light_blue
-        font-size: 17px
-        line-height: 21px
-        text-align: justify
-        font-weight: 400
-      .advantages_description
-        color: #202020
-        font-size: 15px
-        line-height: 21px
-        text-align: justify
-        font-weight: 300
+  &_round
+    width: 131px
+    height: 131px
+    border-radius: 100%
+    background-color: $light_blue
+    margin-right: 26px
+    display: flex
+    justify-content: center
+    align-items: center
+  &_text
+    width: 343px
+  &_header
+    color: $light_blue
+    font-size: 17px
+    line-height: 21px
+    text-align: justify
+    font-weight: 400
+  &_description
+    color: #202020
+    font-size: 15px
+    line-height: 21px
+    text-align: justify
+    font-weight: 300
 
 .mobile
   min-height: 864px
@@ -269,6 +272,7 @@ nav
     display: block
     padding-top: 56px
     margin: 0 auto
+    width: 100%
   &_text
     font-size: 17px
     font-weight: 300
@@ -411,3 +415,6 @@ footer
       font-weight: 400
       text-transform: uppercase
       text-align: center
+
+.xs-visible
+  display: none
